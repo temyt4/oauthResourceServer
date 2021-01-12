@@ -15,6 +15,7 @@ public class ResourceServerConfig {
     @Value(value = "${jwt.secret.key}")
     private String secret;
 
+
     @Bean
     public JwtAccessTokenConverter converter(){
         var converter = new JwtAccessTokenConverter();
